@@ -69,11 +69,7 @@ body{
 	top: 160px;
 	z-index: -1;
 }
-#instructions{
-	position: absolute; 
-	left: 530px; 
-	top: 170px;
-}
+
 .nav{
 	margin-right: 45px;
 }
@@ -92,6 +88,12 @@ body{
 .top{
 	margin-top:-16px;
 
+}
+#message1{
+	white-space: nowrap;
+    width: 15em;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #pic{
 
