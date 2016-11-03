@@ -1,0 +1,68 @@
+body{
+	background-color: #e8e8e8
+	
+}
+ #uwmLogo{	
+	float: left;
+	height: 100px;
+    width: 300px;	
+	position:relative;
+	left:0px;
+}
+.heading{
+	padding: 5px;
+	position:relative;
+	right:0px;
+	top:-10px;
+}
+.links{
+    float: right;
+}
+.userName{
+	position:relative;
+	left:0px;
+	float: right;
+}
+#inboxButton{
+	position:relativel;
+	background-color: #9b9b9b;
+    border: 1px solid #5e5e5e;
+	border-radius: 4px;
+    color: white;
+	cursor: pointer;
+}
+.QandA{
+	position:relative;
+	top:215px;
+	left:550px;
+	border: 2px solid black;
+    border-radius: 5px;
+	height:370px;
+    width: 600px;
+}
+#question{
+    position:relative;
+    left:550px;
+    top:-137px
+}
+#answer{
+    position:relative;
+    left:550px;
+    top:-86px;
+}
+.theInbox{
+	position:absolute;
+	top:250px;
+	left:100px;
+}
+#subjectButton{
+	margin-bottom:10px;
+	display:block;
+	position:relative;
+	height:40px;
+    width:300px;
+	background-color: #9b9b9b;
+    border: 1px solid #5e5e5e;
+	border-radius: 4px;
+    color: white;
+	cursor: pointer;

@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Student Inbox</title>
+		<link rel="stylesheet" type="text/css" href="stylesheetStudent/inboxStylesheet.css">
+	</head>
+	<body>
+		<div class="heading">
+			<form method="post">
+				<div class="userName">
+
+					<p>signed in as name</p>
+				</div>
+			</form>
+			
+			<nav class="links">
+				<form action="/" method="get"><button id="inboxButton">Student page</button></form> | <a href="http://www.uwm.edu">Logout</a> | <a href="http://www.uwm.edu">FAQ</a> |
+			</nav>
+			
+			<img src="http://bublrbikes.com/wp-content/uploads/2015/07/uwm-logo.png" alt="uwm logo" id="uwmLogo">	
+		</div>
+		<div class="QandA">
+			<p style="position:relative; right:290px;"><b><u>question:</u></b></p>
+
+			<p style="position:relative; right:290px;top:50px;"><b><u>Answer:</u></b></p>
+		</div>
+		<div class="theInbox">
+            <form action="/inbox" method="post">
+
+                {%for i in s%}
+                <button id="subjectButton" name="subjectButton">{{i}}</button>
+            {%endfor%}
+			</form>
+            <p id="question">{{tq}}</p>
+            <p id="answer">{{ta}}</p>
+		</div>
+	</body>	
+</html>	
