@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Student Inbox</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/home.css">
+</head>
+<body>
+<div class="heading">
+    <form method="post">
+        <div class="userName">
+
+            <p>signed in as name</p>
+        </div>
+    </form>
+
+    <nav class="links">
+        <form action="/" method="get">
+            <button id="inboxButton">Student page</button>
+        </form>
+        | <a href="http://www.uwm.edu">Logout</a> | <a href="http://www.uwm.edu">FAQ</a> |
+    </nav>
+
+    <img src="http://bublrbikes.com/wp-content/uploads/2015/07/uwm-logo.png" alt="uwm logo" id="uwmLogo">
+</div>
+<div class="QandA">
+    <p style="position:relative; right:290px;"><b><u>question:</u></b></p>
+
+    <p style="position:relative; right:290px;top:50px;"><b><u>Answer:</u></b></p>
+</div>
+<div class="theInbox">
+    <form action="/inboxMsg" method="post">
+        {%if s|length < 1 %}
+        <b>YOUR INBOX IS EMPTY!</b>
+        {%else%}
+
+        {%for i in s%}
+        <button id="subjectButton" name="subjectButton" value={{loop.index}}>{{i}}</button>
+        {%endfor%}
+        {%endif%}
+    </form>
+    <p id="question" >{{tq}}</p>
+    <p id="answer">{{ta}}</p>
+	<div class="box">
+		<form>
+		<textarea name="myTextBox" cols="30" rows="5" font-size="18px">
+		</textarea>
+		<br/><br>
+		<input type="submit" />
+		</form>
+	</div>
+
+</div>
+</body>
+</html>	
