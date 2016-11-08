@@ -1,0 +1,36 @@
+body{
+	background-color:#e8e8e8;
+}
+
+h1{
+	text-align:center;
+	font-size:18px;
+}
+
+p{
+	text-align:center;
+	font-size:18px;
+}
+
+#loginlink{
+	float:right;
+}
+
+#faq_box{
+		font-family: 'Open sans', sans-sarif;
+		border:solid;
+		border-radius:5px;
+		background-color:white;
+		width:500px;
+		margin-left:auto;
+		margin-right:auto;
+}
+
+#UWM{
+	height:80px;
+	width:250px;
+}
+
+#loginButton{
+	float:right;
+}
