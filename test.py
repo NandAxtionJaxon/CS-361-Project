@@ -6,6 +6,8 @@ from login import Login
 
 #wanted to test page navigation from one to the other if something went wrong but we did not know how.
 
+#CHANGES
+
 class TestS1(unittest.TestCase):
 
 	def setUp(self):
